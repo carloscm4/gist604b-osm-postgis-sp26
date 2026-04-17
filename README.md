@@ -18,6 +18,11 @@ Repository for working with OSM spatial data using PostgreSQL and PostGIS.
     │       ├── 03_osm_restaurants_near_streets.sql
     │       ├── 04_osm_railway_density_by_county.sql
     │       └── 05_osm_county_amenity_synthesis.sql
+    ├── sql/
+    │   └── colorado/
+    │       ├── 01_hospitals.sql
+    │       ├── 02_landuse_diversity.sql
+    │       ├── 03_road_density.sql
     ├── src/
     │   └── setup_osm_postgis.py
     ├── docker-compose.yml
