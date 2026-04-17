@@ -10,7 +10,8 @@ Repository for working with OSM spatial data using PostgreSQL and PostGIS.
     │   └── devcontainer.json
     ├── notebooks/
     │   ├── setup_osm_postgis.ipynb
-    │   └── osm_postgis_queries.ipynb
+    │   ├── osm_postgis_queries.ipynb
+    │   └── osm_postgis_colorado.ipynb
     ├── sql/
     │   └── arizona/
     │       ├── 01_osm_restaurant_distribution.sql
