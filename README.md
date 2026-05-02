@@ -1,10 +1,58 @@
-# GIST 604B – OSM & PostGIS
+# Colorado OSM PostGIS Analysis
 
-Repository for working with OSM spatial data using PostgreSQL and PostGIS.
+**Student:** Carlos Andres Castillo  
+**Course:** GIST 604B – Open Source GIS  
+**Module:** Module 5 – OSM and PostGIS Spatial Analysis 
+**University of Arizona**
+
+---
+
+## Project Description
+
+This project uses OpenStreetMap data stored in a PostGIS database to analyze spatial patterns across Colorado. The analysis focuses on hospitals, land use diversity, and road infrastructure at the county level. SQL queries are used to process spatial data, and results are visualized in Python using GeoPandas and Matplotlib.
+
+---
+
+## Tools and Technologies
+
+- PostgreSQL + PostGIS  
+- Python  
+- GeoPandas  
+- SQLAlchemy  
+- Matplotlib  
+- Jupyter Notebook  
+- OpenStreetMap (Geofabrik data)
+
+---
+
+## What I Did
+
+- Set up a PostGIS database using Colorado OpenStreetMap data  
+- Wrote SQL queries to extract hospitals, land use diversity, and road density  
+- Fixed spatial calculations using `ST_Intersection`, `ST_Area`, and `ST_Length` with `::geography` for accurate measurements  
+- Filtered and cleaned administrative boundary data for correct county-level analysis  
+- Visualized spatial results using GeoPandas and Matplotlib  
+- Interpreted spatial patterns across Colorado counties  
+
+---
+
+## How to View / Run
+
+- Open the notebook: `notebooks/osm_postgis_colorado.ipynb`  
+- Ensure Docker and PostGIS are running  
+- Confirm database `colorado` is active  
+- Run notebook cells in order from top to bottom  
+- SQL queries are stored in `sql/colorado/`  
+
+To start the database if needed:
+
+```bash
+docker compose up -d
+```
 
 ## Repository Structure
 
-    .
+    
     ├── .devcontainer/
     │   ├── Dockerfile
     │   └── devcontainer.json
@@ -29,10 +77,3 @@ Repository for working with OSM spatial data using PostgreSQL and PostGIS.
     ├── pyproject.toml
     ├── uv.lock
     └── README.md
-
-## Notes
-
-- Notebooks are for exploration and learning.
-- sql/arizona folder contains sql scripts discussed in the lectures.
-- Data is downloaded and prepared inside the Codespace environment and is not stored in this repository.
-- The database runs in a separate PostGIS container using Docker.
