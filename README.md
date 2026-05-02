@@ -2,7 +2,7 @@
 
 **Student:** Carlos Andres Castillo  
 **Course:** GIST 604B – Open Source GIS  
-**Module:** Module 5 – OSM and PostGIS Spatial Analysis 
+**Module:** Module 5 – OSM and PostGIS Spatial Analysis     
 **University of Arizona**
 
 ---
