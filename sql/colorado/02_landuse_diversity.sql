@@ -1,4 +1,4 @@
--- Count the number of unique land use types in each county
+-- Land use diversity per administrative area
 
 SELECT 
     a.name AS county_name,
@@ -7,5 +7,6 @@ SELECT
 FROM adminareas_a a
 JOIN landuse_a l
 ON ST_Intersects(a.geom, l.geom)
+WHERE a.name IS NOT NULL
 GROUP BY a.name, a.geom
 ORDER BY landuse_type_count DESC;
